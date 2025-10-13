@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/admin/login",
+        "https://skytextiles.in/api/v1/admin/login",
         {
           email,
           password,
