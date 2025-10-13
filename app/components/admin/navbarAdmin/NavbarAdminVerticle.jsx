@@ -87,7 +87,7 @@ export default function NavbarAdmin() {
 const fetchUserPermissions = async () => {
   const token = JSON.parse(localStorage.getItem("UserData"));
   try {
-    const response = await axios.get("http://localhost:8000/api/v1/user/permissions", {
+    const response = await axios.get("https://skytextiles.in/api/v1/user/permissions", {
       headers: {
         "Authorization": `Bearer ${token}`, // pass the token
       },

@@ -331,7 +331,7 @@ export default function AddDepartment({ setViewForm, fetchDepartments, setLoadin
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/event/create",
+        "https://skytextiles.in/api/v1/event/create",
         formData,
         {
           headers: {

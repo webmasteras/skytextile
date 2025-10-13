@@ -82,7 +82,7 @@ export default function EditSubAdmin({ setEditModalOpen, fetchUsers, user, token
       }
 
       const response = await axios.put(
-        `http://localhost:8000/api/v1/user/${user._id}`,
+        `https://skytextiles.in/api/v1/user/${user._id}`,
         dataToSend,
         {
           headers: { Authorization: `Bearer ${token}` },

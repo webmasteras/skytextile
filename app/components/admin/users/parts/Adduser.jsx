@@ -86,7 +86,7 @@ export default function AddSubAdmin({ setViewForm, fetchUsers, token }) {
       const dataToSend = { ...formData, permissions: selectedPermissions, role: "subadmin" };
 
       const res = await axios.post(
-        "http://localhost:8000/api/v1/user/register",
+        "https://skytextiles.in/api/v1/user/register",
         dataToSend,
         { headers: { Authorization: `Bearer ${token}` } }
       );
