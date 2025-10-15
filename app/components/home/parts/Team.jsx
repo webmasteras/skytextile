@@ -17,7 +17,7 @@ import anand from "./assets/team/AnandMishra.png";
 import satendar from "./assets/team/Satendar.png";
 import anurag from "./assets/team/Anurag.png";
 import uday from "./assets/team/uday.jpg";
-import travadi from "./assets/team/MohammadTravadi.png";
+import travadi from "./assets/team/MohammadTravadi.jpg";
 import arishu from "./assets/team/arishu.jpg";
 import arvinf from "./assets/team/arvinf.jpg";
 import bhupendra from "./assets/team/bhupendra.jpg";
