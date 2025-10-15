@@ -42,7 +42,7 @@ import {
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { Auth } from "../../context/Auth";
-import CreateCareers from "./parts/Createcareers"; 
+import CreateCareers from "./parts/CreateCareers"; 
 import EditCareer from "./parts/EditCareers";
 
 export default function Careers() {
