@@ -20,7 +20,7 @@ export default function Hero() {
         controls={false}
         style={{ objectFit: "cover" }}
       >
-        <source src="/assets/New.mp4" type="video/mp4" />
+        <source src="/assets/SKY TEXTILES 40 mb.mp4" type="video/mp4" />
       </video>
     </Box>
   );
