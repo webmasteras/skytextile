@@ -5,9 +5,9 @@ import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import yarnImage from "./assets/Yarn.gif";
-import fabricImage from "./assets/Fabric.gif";
-import garmentImage from "./assets/Garment.gif";
+// import yarnImage from "./assets/Yarn.gif";
+// import fabricImage from "./assets/Fabric.gif";
+// import garmentImage from "./assets/Garment.gif";
 import { useRef, useState } from "react";
 import ReactLenis from "@studio-freight/react-lenis";
 import { FaCircle } from "react-icons/fa";
@@ -374,7 +374,7 @@ export default function BusinessVerticles({ mapRef }) {
                 </Typography>
               </Stack>
               <Box display={{ md: "none" }}>
-                <Image width={200} height={200} src={yarnImage} alt="Yarn" />
+                <Image width={200} height={200} src="/assets/Yarn.gif" alt="Yarn" />
               </Box>
             </Stack>
           </Stack>
@@ -463,7 +463,7 @@ export default function BusinessVerticles({ mapRef }) {
           className="imageContainer"
         >
           <Image
-            src={yarnImage}
+            src="/assets/Yarn.gif"
             alt=""
             fill
             objectPosition="top"
@@ -471,7 +471,7 @@ export default function BusinessVerticles({ mapRef }) {
             className="yarnImage"
           />
           <Image
-            src={fabricImage}
+            src="/assets/Fabric.gif"
             alt=""
             fill
             objectPosition="top"
@@ -480,7 +480,7 @@ export default function BusinessVerticles({ mapRef }) {
             className="fabricImage"
           />
           <Image
-            src={garmentImage}
+            src="/assets/Garment.gif"
             alt=""
             fill
             objectPosition="top"
@@ -689,7 +689,7 @@ export default function BusinessVerticles({ mapRef }) {
             </Typography>
           </Stack>
           <Box display={{ md: "none" }}>
-            <Image width={200} height={200} src={fabricImage} alt="Fabric" />
+            <Image width={200} height={200} src="/assets/Fabric.gif" alt="Fabric" />
           </Box>
         </Stack>
       </Stack>
@@ -914,7 +914,7 @@ export default function BusinessVerticles({ mapRef }) {
             </Typography>
           </Stack>
           <Box display={{ md: "none" }}>
-            <Image width={200} height={200} src={garmentImage} alt="Garments" />
+            <Image width={200} height={200} src="/assets/Garment.gif" alt="Garments" />
           </Box>
         </Stack>
       </Stack>

@@ -1,10 +1,6 @@
 "use client";
 
 import { Box, Stack, Typography } from "@mui/material";
-import enduro1 from "./assets/events/b1.JPG";
-import enduro2 from "./assets/events/b2.JPG";
-import enduro3 from "./assets/events/s1.JPG";
-import enduro4 from "./assets/events/s2.JPG";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -27,7 +23,6 @@ export default function Enduro() {
           start: "top bottom",
           end: "center top",
           scrub: true,
-          //   markers: true,
         },
       }
     )
@@ -41,7 +36,6 @@ export default function Enduro() {
             start: "top bottom",
             end: "center top",
             scrub: true,
-            // markers: true,
           },
         }
       )
@@ -55,7 +49,6 @@ export default function Enduro() {
             start: "top bottom",
             end: "bottom top",
             scrub: true,
-            // markers: true,
           },
         }
       )
@@ -69,11 +62,17 @@ export default function Enduro() {
             start: "top bottom",
             end: "bottom top",
             scrub: true,
-            // markers: true,
           },
         }
       );
   });
+
+  // ✅ Use direct public URLs instead of imports
+  const enduro1 = "/assets/events/b1.JPG";
+  const enduro2 = "/assets/events/b2.JPG";
+  const enduro3 = "/assets/events/s1.JPG";
+  const enduro4 = "/assets/events/s2.JPG";
+
   return (
     <Stack margin={{ md: "0 50px", xs: "20px" }} gap={"10px"}>
       <Typography
@@ -84,6 +83,8 @@ export default function Enduro() {
       >
         Events at Sky Textiles
       </Typography>
+
+      {/* ---- FIRST SECTION ---- */}
       <Stack
         display={{ md: "flex", xs: "none" }}
         width={"100%"}
@@ -97,15 +98,12 @@ export default function Enduro() {
           height={"70%"}
           position={"relative"}
           sx={{
-            backgroundImage: `url(${enduro3.src})`,
-            // backgroundSize: "cover",
+            backgroundImage: `url(${enduro3})`,
             backgroundSize: "160%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             transition: "all 0.3s ease",
-            "&:hover": {
-              backgroundSize: "175%",
-            },
+            "&:hover": { backgroundSize: "175%" },
             "&::after": {
               content: '""',
               position: "absolute",
@@ -113,7 +111,7 @@ export default function Enduro() {
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.4)", // Black overlay with 20% opacity
+              backgroundColor: "rgba(0, 0, 0, 0.4)",
               zIndex: 1,
             },
           }}
@@ -141,28 +139,25 @@ export default function Enduro() {
               sx={{
                 transition: "all 0.4s ease",
                 cursor: "pointer",
-                "&: hover": {
-                  scale: "1.6",
-                },
+                "&: hover": { scale: "1.6" },
               }}
             >
               <MdOutlineArrowOutward color="white" />
             </Stack>
           </Stack>
         </Stack>
+
         <Box
           width={"60%"}
           height={"100%"}
           position={"relative"}
           sx={{
-            backgroundImage: `url(${enduro1.src})`,
+            backgroundImage: `url(${enduro1})`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center 0px",
             transition: "all 0.3s ease",
-            "&:hover": {
-              backgroundSize: "175%",
-            },
+            "&:hover": { backgroundSize: "175%" },
             "&::after": {
               content: '""',
               position: "absolute",
@@ -170,7 +165,7 @@ export default function Enduro() {
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.4)", // Black overlay with 20% opacity
+              backgroundColor: "rgba(0, 0, 0, 0.4)",
               zIndex: 1,
             },
           }}
@@ -198,9 +193,7 @@ export default function Enduro() {
               sx={{
                 transition: "all 0.4s ease",
                 cursor: "pointer",
-                "&: hover": {
-                  scale: "1.6",
-                },
+                "&: hover": { scale: "1.6" },
               }}
             >
               <MdOutlineArrowOutward color="white" />
@@ -208,6 +201,8 @@ export default function Enduro() {
           </Stack>
         </Box>
       </Stack>
+
+      {/* ---- SECOND SECTION ---- */}
       <Stack
         display={{ md: "flex", xs: "none" }}
         width={"100%"}
@@ -221,14 +216,12 @@ export default function Enduro() {
           height={"100%"}
           position={"relative"}
           sx={{
-            backgroundImage: `url(${enduro2.src})`,
+            backgroundImage: `url(${enduro2})`,
             backgroundSize: "150%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center 0px",
             transition: "all 0.3s ease",
-            "&:hover": {
-              backgroundSize: "175%",
-            },
+            "&:hover": { backgroundSize: "175%" },
             "&::after": {
               content: '""',
               position: "absolute",
@@ -236,7 +229,7 @@ export default function Enduro() {
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.4)", // Black overlay with 20% opacity
+              backgroundColor: "rgba(0, 0, 0, 0.4)",
               zIndex: 1,
             },
           }}
@@ -264,28 +257,25 @@ export default function Enduro() {
               sx={{
                 transition: "all 0.4s ease",
                 cursor: "pointer",
-                "&: hover": {
-                  scale: "1.6",
-                },
+                "&: hover": { scale: "1.6" },
               }}
             >
               <MdOutlineArrowOutward color="white" />
             </Stack>
           </Stack>
         </Box>
+
         <Box
           width={"40%"}
           height={"70%"}
           position={"relative"}
           sx={{
-            backgroundImage: `url(${enduro4.src})`,
+            backgroundImage: `url(${enduro4})`,
             backgroundSize: "160%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
             transition: "all 0.3s ease",
-            "&:hover": {
-              backgroundSize: "175%",
-            },
+            "&:hover": { backgroundSize: "175%" },
             "&::after": {
               content: '""',
               position: "absolute",
@@ -293,7 +283,7 @@ export default function Enduro() {
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: "rgba(0, 0, 0, 0.4)", // Black overlay with 20% opacity
+              backgroundColor: "rgba(0, 0, 0, 0.4)",
               zIndex: 1,
             },
           }}
@@ -321,9 +311,7 @@ export default function Enduro() {
               sx={{
                 transition: "all 0.4s ease",
                 cursor: "pointer",
-                "&: hover": {
-                  scale: "1.6",
-                },
+                "&: hover": { scale: "1.6" },
               }}
             >
               <MdOutlineArrowOutward color="white" />
@@ -331,147 +319,49 @@ export default function Enduro() {
           </Stack>
         </Box>
       </Stack>
+
+      {/* ---- MOBILE SECTION ---- */}
       <Stack width={"100%"} gap={"10px"} display={{ md: "none" }}>
-        <Box
-          width={"100%"}
-          height={"40vh"}
-          position="relative"
-          sx={{
-            backgroundImage: `url(${enduro1.src})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center center",
-          }}
-        >
-          <Stack
-            position={"absolute"}
-            direction={"row"}
+        {[enduro1, enduro2, enduro3, enduro4].map((img, i) => (
+          <Box
+            key={i}
+            width={"100%"}
+            height={"40vh"}
+            position="relative"
             sx={{
-              bottom: "5%",
-              backgroundColor: "rgba(0, 0, 0, 0.6)",
-              width: "100%",
-              padding: "20px",
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center center",
             }}
-            justifyContent={"space-between"}
           >
-            <Typography color="white">Emerging Legends of Gujarat</Typography>
             <Stack
-              backgroundColor={"#E39B97"}
-              width={"25px"}
-              height={"25px"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              borderRadius={"2px"}
+              position={"absolute"}
+              direction={"row"}
+              sx={{
+                bottom: "5%",
+                backgroundColor: "rgba(0, 0, 0, 0.6)",
+                width: "100%",
+                padding: "20px",
+              }}
+              justifyContent={"space-between"}
             >
-              <MdOutlineArrowOutward color="white" />
+              <Typography color="white">
+                {["Bharat-Tex", "Emerging Legends", "Enterpreneur's Launchpad", "Vibrant Gujarat"][i]}
+              </Typography>
+              <Stack
+                backgroundColor={"#E39B97"}
+                width={"25px"}
+                height={"25px"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                borderRadius={"2px"}
+              >
+                <MdOutlineArrowOutward color="white" />
+              </Stack>
             </Stack>
-          </Stack>
-        </Box>
-        <Box
-          position="relative"
-          width={"100%"}
-          height={"40vh"}
-          sx={{
-            backgroundImage: `url(${enduro2.src})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center center",
-          }}
-        >
-          <Stack
-            position={"absolute"}
-            direction={"row"}
-            sx={{
-              bottom: "5%",
-              backgroundColor: "rgba(0, 0, 0, 0.6)",
-              width: "100%",
-              padding: "20px",
-            }}
-            justifyContent={"space-between"}
-          >
-            <Typography color="white"></Typography>
-            <Stack
-              backgroundColor={"#E39B97"}
-              width={"25px"}
-              height={"25px"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              borderRadius={"2px"}
-            >
-              <MdOutlineArrowOutward color="white" />
-            </Stack>
-          </Stack>
-        </Box>
-        <Box
-          width={"100%"}
-          position="relative"
-          height={"40vh"}
-          sx={{
-            backgroundImage: `url(${enduro3.src})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center center",
-          }}
-        >
-          <Stack
-            position={"absolute"}
-            direction={"row"}
-            sx={{
-              bottom: "5%",
-              backgroundColor: "rgba(0, 0, 0, 0.6)",
-              width: "100%",
-              padding: "20px",
-            }}
-            justifyContent={"space-between"}
-          >
-            <Typography color="white">Enterpreneur's Launchpad</Typography>
-            <Stack
-              backgroundColor={"#E39B97"}
-              width={"25px"}
-              height={"25px"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              borderRadius={"2px"}
-            >
-              <MdOutlineArrowOutward color="white" />
-            </Stack>
-          </Stack>
-        </Box>
-        <Box
-          position="relative"
-          width={"100%"}
-          height={"40vh"}
-          sx={{
-            backgroundImage: `url(${enduro4.src})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center center",
-          }}
-        >
-          <Stack
-            position={"absolute"}
-            direction={"row"}
-            sx={{
-              bottom: "5%",
-              backgroundColor: "rgba(0, 0, 0, 0.6)",
-              width: "100%",
-              padding: "20px",
-            }}
-            justifyContent={"space-between"}
-          >
-            <Typography color="white">Vibrant Gujarat</Typography>
-            <Stack
-              backgroundColor={"#E39B97"}
-              width={"25px"}
-              height={"25px"}
-              justifyContent={"center"}
-              alignItems={"center"}
-              borderRadius={"2px"}
-            >
-              <MdOutlineArrowOutward color="white" />
-            </Stack>
-          </Stack>
-        </Box>
+          </Box>
+        ))}
       </Stack>
     </Stack>
   );

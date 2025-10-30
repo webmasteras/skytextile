@@ -1,5 +1,5 @@
 import { Box, Stack, Typography } from "@mui/material";
-import map from "./assets/map.gif";
+// import map from "./assets/map.gif";
 import Image from "next/image";
 
 export default function ({ mapRef }) {
@@ -33,7 +33,7 @@ export default function ({ mapRef }) {
         width={"100%"}
         height={{ md: "90vh", xs: "50vh" }}
       >
-        <Image src={map} alt="" fill objectFit="contain" />
+        <Image src="/assets/map.gif" alt="" fill objectFit="contain" />
       </Box>
     </Stack>
   );

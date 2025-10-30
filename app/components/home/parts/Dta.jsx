@@ -1,5 +1,4 @@
 import { Box, Stack, Typography } from "@mui/material";
-import wool from "./assets/wool.gif";
 import Image from "next/image";
 
 export default function Dta() {
@@ -16,7 +15,7 @@ export default function Dta() {
         display={{ md: "block", xs: "none" }}
         position={"relative"}
       >
-        <Image src={wool} alt="" fill objectFit="contain" />
+        <Image src="/assets/wool.gif" alt="" fill objectFit="contain" />
       </Box>
       <Stack>
         <Typography
