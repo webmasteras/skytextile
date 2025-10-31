@@ -12,10 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
-import vishno from "./assets/team/Vishno.png";
-import anand from "./assets/team/AnandMishra.png";
-import satendar from "./assets/team/Satendar.png";
-import anurag from "./assets/team/Anurag.jpg";
+
 import uday from "./assets/team/uday.jpg";
 import travadi from "./assets/team/MohammadTravadi.jpg";
 import arishu from "./assets/team/arishu.jpg";
@@ -34,30 +31,7 @@ import anuragdug from "./assets/team/AnuragDulgach.jpg";
 import vipul from "./assets/team/VipulMatholiya.jpg";
 
 const teamData = [
-  {
-    id: 0,
-    name: "Vishnoo Pachori",
-    designation: "VP Marketing Fabrics",
-    img: vishno,
-  },
-  {
-    id: 1,
-    name: "Anand Mishra",
-    designation: "GM Production Garments",
-    img: anand,
-  },
-  {
-    id: 2,
-    name: "Satendra Singh",
-    designation: "Head Accounts & Commercial",
-    img: satendar,
-  },
-  {
-    id: 3,
-    name: "Anurag Dulgach",
-    designation: "Head Ecommerce & Social Media",
-    img: anurag,
-  },
+  
   {
     id: 4,
     name: "Uday Kambe",
